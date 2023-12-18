@@ -1,0 +1,209 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: #dcaaf5;
+    
+    
+  }
+
+  .birthdayCard {
+    position: relative;
+    width: 480px;
+    height: 400px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+      transform: perspective(2500px);
+    transition: 4s;
+  }
+
+ 
+  
+  .birthdayCard:hover {
+      transform: perspective(2500px) rotate(5deg);
+      box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
+  }
+  
+  .birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg); 
+  }
+  
+  .birthdayCard:hover .front-text {
+    display: none;
+  }
+   
+  .birthdayCard:hover .wrap-deco {
+    display: none;
+  }
+  
+  .birthdayCard:hover .wrap-decoTwo {
+    display: none;
+  }
+  
+  .birthdayCard:hover .plate {
+    display: none;
+  }
+
+  .reno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 117px;
+    z-index: 100;
+  }
+
+  .birthdayCard:hover .reno {
+    display: none;
+  }
+
+  .reno img{
+    width: 260px;
+    height: auto;
+  }
+
+    .caja-estrella{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+  .fondo-navidad{
+    width: 80%;
+    height: auto;
+    opacity: 0.3;
+  }
+
+  .cardFront {
+    position: relative;
+    background-color: #fff;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .4s;
+  }
+
+    
+  .feliz-navidad{
+    text-align: center;
+    top: 163px;
+    margin-top: 97px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 180px;
+    font-size: 2em;
+  }
+  
+   
+  .shan {
+    position: absolute;
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    text-align: center;
+    top: 163px;
+    margin-top: 136px;
+    margin-left: 200px;
+  }
+  
+  .wrap-deco {
+    position: absolute;
+    top:-230px;
+    left:-200px;
+  }
+
+  .adorno-navidad{
+    width: 8%;
+    height: auto;
+    transform: rotate(5deg);
+    display: flex;
+    margin-left: 621px;
+    margin-top: 243px;
+  }
+
+  .wrap-decoTwo {
+    
+    /* position: absolute; */
+    top: -176px;
+    left: -54px;
+    transform: rotate(318deg);
+  }
+
+  .adorno-navidad-izq{
+    width: 8%;
+    height: auto;
+    transform: rotate(5deg);
+    
+    margin-left: 1px;
+    margin-top: -80px;
+    margin-right: 10px;
+    
+  }
+
+  
+   .cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 500px;
+    height: 400px;
+    z-index:-1;
+    left:0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  }
+
+  .birthdayCard .inside-text {
+    position: relative;
+    top: -7px;
+    left: 3px;
+    transform: scale(0.7);
+    text-align: center;
+  }
+  
+  
+  .inside-text {
+    position: relative;
+    top:-160px;
+    transform: scale(0.7);
+  }
+
+  .merry-christmas {
+    
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 30px; 
+    margin-top: -50px;
+
+    top:160px;
+    font-size: 3em;
+  }
+  
+  .wishes {
+    position: relative;
+    top: -35px;
+    margin: 15px;
+    margin-left: -2px;
+    margin-right: 50px;
+    font-size: 1.5em;
+
+    font-family: 'Indie Flower', cursive;
+   
+    color: #151515;
+    text-align: justify;
+    letter-spacing: 0.1em;
+  }
+  
+  
+  .name {
+    margin-left:370px;
+    font-weight: 900;
+    margin-top: -30px;
+    font-size: 1.5em;
+    font-family: 'Indie Flower', cursive;
+  }
+  
